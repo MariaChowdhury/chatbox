@@ -18,8 +18,8 @@ public class MyCallable implements Callable<DoubleAndId> {
 
     @Override
     public DoubleAndId call() throws Exception {
-    	line=line.replace("/", "");
-    	line=line.replace("X", "");
+    	line=line.replace("/", "-1");
+    	line=line.replace("X", "10");
     	line=line.replace("-", "");
        String arr[]=line.split(",");
        double[] stat=new double[arr.length];
